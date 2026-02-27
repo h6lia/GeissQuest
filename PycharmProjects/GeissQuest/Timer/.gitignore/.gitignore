@@ -1,0 +1,15 @@
+# Windows System-Dateien
+AppData/
+Thumbs.db
+*.log
+
+# PyCharm / IDE Dateien
+.idea/
+*.iml
+
+# Python cache
+__pycache__/
+*.pyc
+
+# lokale Daten
+data.json
