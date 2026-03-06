@@ -1,13 +1,13 @@
 import json
 
-FILE_NAME = "data.json"
+FILE_NAME = "../data.json"
 
 def load_data():
     try:
         with open(FILE_NAME, "r") as f:
             return json.load(f)
     except FileNotFoundError:
-        return {"total_minutes": 0}
+        return {"total_minutes": 0, "total_clover": 0, "last_reset": ""}
 
 
 def save_data(data):
