@@ -1,8 +1,9 @@
-
 from stats.stats import show_stats
 from timer.timer import choose_time, start_timer, choose_display_mode
 
 print("=== GeissQuest Menu ===")
+
+
 def run_menu():
     while True:
 
@@ -15,7 +16,7 @@ def run_menu():
         if choice == "a":
             minutes = choose_time()
             show_countdown = choose_display_mode()
-            start_timer(minutes,show_countdown)
+            start_timer(minutes, show_countdown)
         elif choice == "b":
             show_stats()
         elif choice == "c":

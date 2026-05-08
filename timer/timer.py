@@ -1,6 +1,6 @@
 import time
 
-OPTIONS = [15, 25, 30, 45, 60] #sch
+OPTIONS = [15, 25, 30, 45, 60]  # sch
 
 
 def choose_time():
@@ -28,12 +28,11 @@ def choose_display_mode():
             return choice == "y"
         print("Please enter 'y' or 'n'")
 
-#def input_thread(q):
+    # def input_thread(q):
     while True:
         q.put(input().lower())
 
-
-#def timer_controls():
+    # def timer_controls():
     choice = input("Press q to stop timer: ").lower()
 
     while choice not in ["q"]:
@@ -43,15 +42,11 @@ def choose_display_mode():
 
 
 def start_timer(minutes, show_countdown=True):
-
     print(f"Timer starts for {minutes} minutes now.\n")
-
 
     try:
 
-
         for remaining in range(minutes, 0, -1):
-
 
             if show_countdown:
                 print(f"{remaining} min remaining")
@@ -64,19 +59,15 @@ def start_timer(minutes, show_countdown=True):
                 if elapsed % 15 == 0:
                     print("You get a clover!")
 
+                    # stop = input("Press q+ENTER to stop the time: ")
 
-                    #stop = input("Press q+ENTER to stop the time: ")
-
-                    #f stop.lower() == "q":
+                    # f stop.lower() == "q":
                     #    print("Timer stopped.")
-                     #   return None
+                    #   return None
 
-                    #if stop.lower() == "w":
-                     #   print("Restarting timer!")
-                      #  return "restart"
-
-
-
+                    # if stop.lower() == "w":
+                    #   print("Restarting timer!")
+                    #  return "restart"
 
         print("Session finished!")
 

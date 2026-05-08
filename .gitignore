@@ -7,7 +7,6 @@ Thumbs.db
 *.log
 .DS_Store
 
-
 .idea/
 *.iml
 .vscode/
@@ -18,5 +17,3 @@ __pycache__/
 *.pyd
 
 data.json
-
-

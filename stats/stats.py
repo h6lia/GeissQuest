@@ -1,7 +1,7 @@
-
 from timer.storage import load_data
-def show_stats():
 
+
+def show_stats():
     data = load_data()
 
     print("\n-- Your stats ---")
